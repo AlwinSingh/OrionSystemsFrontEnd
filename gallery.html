@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orion: Ultimate Gaming Computers!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="javascript/main.js"></script>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  
+
+  <!--HTML Document 
+Name: Alwin Singh
+Student ID: 1935996
+Class: DIT/FT/1A/01-->
+
+  <!-- Fav Icon -->
+  <link rel="icon" href="img/orion-notext.png">
+</head>
+
+<body>
+
+  <header id="header"></header>
+
+  <div class="jumbotron text-center bg-transparent">
+    <div class="htext"><h1>Orion Computer Gallery </div> <i class="pl-4 fas fa-image display-4 align-middle text-secondary"></i></h1>
+  </div>
+  <div class="container p-5 border-dark border bg-none my-5 fed-lightbox">
+
+      <div class="row">
+            <img src="img/Gallery1.png" class="img-fluid col-md-6 col-sm-12 h-50 pb-3" alt="Gallery 1">
+            <img src="img/Gallery2.png" class="img-fluid col-md-6 pb-3 h-50" alt="Gallery 2">
+            <img src="img/Gallery3.png" class="img-fluid col-md-6 pb-3 h-50" alt="Gallery 3">
+            <img src="img/Gallery4.png" class="img-fluid col-md-6 pb-3 h-50" alt="Gallery 4">
+            <img src="img/Gallery5.png" class="img-fluid col-md-6 pb-3 h-50" alt="Gallery 5">
+            <img src="img/Gallery6.png" class="img-fluid col-md-6 pb-3 h-50" alt="Gallery 6">
+        </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="lightbox-modal">
+      <div class="modal-dialog modal-fullsize">
+          <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header border-0 row">
+                  <div class="col">
+                      <h4 class=" lightbox-img-title"></h4>
+                  </div>
+
+                  <div class="col d-flex">
+                      <h4 class="lightbox-img-counter col d-none d-md-block"></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <div class="col d-md-none">
+                        <h4 class="lightbox-img-counter col mr-5 d-block d-md-none"></h4>
+                    </div>
+
+              </div>
+              <!-- Modal Nav -->
+              <div class="modal-nav container-fluid row no-gutters">
+                  <button class="col mr-1 lightbox-prev btn btn-danger"><i class='fas fa-angle-left'></i></button>
+                  <button class="col ml-1 lightbox-next btn btn-success"><i class='fas fa-angle-right'></i></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body lightbox-img-holder">
+                  
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+  <footer id="footer"></footer>
+
+</body>
+
+</html>

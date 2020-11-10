@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion: Ultimate Gaming Computers!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="javascript/main.js"></script>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <!--HTML Document 
+Name: Alwin Singh
+Student ID: 1935996
+Class: DIT/FT/1A/01-->
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="img/orion-notext.png">
+</head>
+
+<body>
+    <header id="header"></header>
+
+
+
+    <div class="container">
+        <div class="row">
+
+
+            <!-- Card 3 -->
+            <div class="col-md-12 col-lg-12 mx-auto d-block card-container pb-3">
+                <div class="card card-flip border border-secondary">
+                    <section class="front d-flex">
+                        <div class="card-body align-self-center text-center rounded-top">
+                            <img src="img/orion-notext2.png" alt="">
+                        </div>
+                    </section>
+                    <section class="card back border-0">
+                        <div class="card-header">Have a question? Contact us by simply clicking on the button below!
+                        </div>
+                        <div class="card-body rounded-bottom">
+                            <button type="button"
+                                class="btn btn-primary btn-dark border border-secondary rounded float-left d-block"
+                                data-toggle="modal" data-target="#Contact"><span
+                                    class="fas fa-mail-bulk pr-2"></span>Contact Us</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- End Card 3 -->
+
+        </div>
+    </div>
+
+    <div class="modal" id="Contact">
+        <div class="modal-dialog">
+            <div class="modal-content border border-secondary">
+
+                <!-- Modal Header -->
+                <div class="modal-header modal-style rounded-top">
+                    <h4 class="modal-title text-white-50">Contact Form</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body modal-style">
+                    <form action="#sentContact" id="contactForm">
+                        <label for="salutation">Salutation:</label>
+                        <select class="form-control border-secondary" id="salutation" name="salutation" size="4"
+                            multiple>
+                            <option value="mr">Mr</option>
+                            <option value="mrs">Mrs</option>
+                            <option value="mdm">Mdm</option>
+                            <option value="dr">Dr</option>
+                        </select>
+                </div>
+
+                <div class="form-group p-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                    <div class="invalid-feedback">
+                        Please enter a valid name.
+                    </div>
+                </div>
+
+                <div class="form-group p-3">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+
+                <div class="form-group p-3">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control border-secondary" id="message" name="message" rows="5"
+                        cols="30"></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a valid message.
+                    </div>
+                </div>
+
+                <button type="submit" class="btn text-white"><span class="fas fa-paper-plane pr-2"></span>Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- The Modal -->
+      <div class="modal" id="sentContact">
+        <div class="modal-dialog">
+          <div class="modal-content border border-secondary rounded">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-white-50">Success!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              We will get back to you as soon as possible. Estimated time is between 24 to 36 hours. Thank you.
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+
+    <div class="container pt-md-0 pt-lg-5 mt-md-3 mt-lg-2">
+        <div class="row p-5">
+            <!-- Contact Information with images -->
+            <div class="col-md-2"><img src="img/contactlogo.png" alt="contactlogo" class="mx-auto d-block"></div>
+            <p class="text-white text-center pt-3 pd-lg-0 col-md-10 pl-md-4 align-self-center text-center text-md-left">
+                You
+                may choose to contact the assigned Agent to your order on the
+                Invoice provided
+                in the box. You may contact the agent via the specificed
+                business hotline provided. Agents will attend to you as soon as possible.</p>
+        </div>
+        <div class="row p-5">
+            <div class="col-md-2"><img src="img/contactlogo2.png" alt="contactlogo2" class="mx-auto d-block"></div>
+            <p class="text-white text-center pt-3 pd-lg-0 col-md-10 pl-md-4 align-self-center text-center text-md-left">
+                Call
+                94782957 for any enquiries. Our business hotline is from 9AM
+                to 5PM. Your call may
+                be recorded for training enhancement purposes.</p>
+        </div>
+        <div class="row p-5">
+            <div class="col-md-2"><img src="img/contactlogo3.png" alt="contactlogo3" class="mx-auto d-block"></div>
+            <p class="text-white text-center pt-3 pd-lg-0 col-md-10 pl-md-4 align-self-center text-center text-md-left">
+                Alternatively, you may drop by our Office located at 9 Ubi Cres,
+                Singapore 408558, Lot
+                #5857A. Identification may be required for entry into the permises.</p>
+        </div>
+
+        <!-- Summary -->
+        <div class="row p-5">
+            <div class="col-md-2"></div>
+            <div class="text pb-5 col-md-10 pl-md-4 align-self-center text-left">Email:
+                support@orionpc.com
+                <br>
+                Tel: +65 9478 2957<br>
+                Operating Hours: 9AM to 5PM<br>
+                Address: 9 Ubi Cres, Singapore 408558, Lot #5857A</div>
+            <br><br><br><br>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orion: Ultimate Gaming Computers!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="javascript/main.js"></script>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/checkout.css" rel="stylesheet" type="text/css">
+
+  <!--HTML Document 
+Name: Alwin Singh
+Student ID: 1935996
+Class: DIT/FT/1A/01-->
+
+  <!-- Fav Icon -->
+  <link rel="icon" href="img/orion-notext.png">
+</head>
+
+<body>
+  <header id="header"></header>
+
+  <form action="checkout2.html" id="checkout1" class="p-3">
+    <div class="container col-lg-5 checkout-form border-checkout pt-3 mx-auto d-block">
+      <div class="block-heading pb-3 text-white-50">
+        <h2>Shipping Details</h2>
+        <p>Secure & Authorised Checkout. Orion Computers.</p>
+      </div>
+      <div class="row">
+
+
+        <div class="form-group col-12 col-md-7 col-lg-12">
+          <label for="email" class="text">Email <span class="text-muted">(Used to send tracker ID)</span></label>
+          <input type="email" class="form-control" id="emailcheckout" name="emailcheckout" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+<!-- class="invalid-feedback" is a bootstrap 4 class that displays an error message for invalid field(s) -->
+        <div class="row pl-3">
+          <div class="col-11 col-md-5 col-lg-10 mb-3">
+            <label for="country" class="text">Country</label>
+            <select class="custom-select d-block w-100" id="country">
+              <!-- Only deliverable to certain selected countries -->
+              <option value="">Choose...</option>
+              <option>Singapore</option>
+              <option>Malaysia</option>
+              <option>Vietnam</option>
+              <option>Indonesia</option>
+              <option>Thailand</option>
+              <option>Phillipines</option>
+              <option>Myanmar</option>
+              <option>India</option>
+              <option>Australia</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-11 col-md-3 col-lg-5 mb-3">
+            <label for="state" class="text">State</label>
+            <input type="text" class="form-control d-block w-100" id="state">
+            </input>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-11 col-md-3 col-lg-5 mb-3">
+            <label for="zip" class="text">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="123456">
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-12 pb-3">
+          <label for="addr" class="text">Address:</label>
+          <textarea class="form-control" id="addr" name="addr" rows="4" cols="30"
+            placeholder="500 Dover Road Block T20 Level 1 Class 2"></textarea>
+          <div class="invalid-feedback">Please enter a valid shipping address.</div>
+        </div>
+
+        <div class="form-group col-sm-12 pt-4">
+          <button type="submit" id="payButton" class="btn btn-checkout w-auto mr-auto d-block btn-block">Submit
+            Payment</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <br>
+
+
+
+  <footer id="footer"></footer>
+</body>
+
+</html>

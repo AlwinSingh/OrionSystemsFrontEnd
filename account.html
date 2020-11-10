@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orion: Ultimate Gaming Computers!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="javascript/main.js"></script>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+
+  <!--HTML Document 
+Name: Alwin Singh
+Student ID: 1935996
+Class: DIT/FT/1A/01-->
+
+  <!-- Fav Icon -->
+  <link rel="icon" href="img/orion-notext.png">
+</head>
+
+<body>
+  <header id="header"></header>
+  <div class="container-fluid m-0">
+    <div class="row">
+      <div class="container w-100 align-items-center p-5 col-sm-12 col-md-6 col-lg-4">
+        <div class="d-flex justify-content-center h-100">
+          <div class="card w-100 border rounded mr-auto">
+            <div class="card-header card-account">
+              <h3 class="htext">Login</h3>
+            </div>
+            <div class="card-body card-account">
+              <form id="login">
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <!-- <i class=""> stores the icon, retrieved from font awesome -->
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="name-login" name="name" placeholder="Username">
+                  <div class="invalid-feedback">Enter a valid username!</div>
+
+                </div>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                  </div>
+                  <input type="password" class="form-control" id="pass-login" name="pass-login" placeholder="Password">
+                  <div class="invalid-feedback">Enter a valid password!</div>
+                </div>
+                <div class="row align-items-center pl-3 remember">
+                  <input type="checkbox" class="mr-2">Remember Me
+                </div>
+                <div class="form-group d-none d-md-block">
+                  <input type="submit" value="Login" class="btn float-right login_btn ">
+                </div>
+                <div class="form-group d-block d-md-none pt-5">
+                  <button type="submit" value="Login" class="btn mx-auto d-block login_btn "> Login </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="card-footer card-account d-none d-md-block">
+              <div class="d-flex justify-content-center links text-white-50">
+                Don't have an account? Sign Up now!
+              </div>
+              <br>
+              <div class="d-flex justify-content-center">
+                <a href="#">Forgot your password?</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- The Modal SUCCESS LOGIN! -->
+      <div class="modal" id="loginSuccess">
+        <div class="modal-dialog">
+          <div class="modal-content border border-secondary rounded">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-success">Success<i class="fas fa-check-double pl-3"></i></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Thank you for logging in, <span id="name-modal" class="text-info"></span>. Enjoy your session!
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal" onclick="location.href='index.html'">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal SUCCESS LOGIN! -->
+      <div class="modal" id="registerSuccess">
+        <div class="modal-dialog">
+          <div class="modal-content border border-secondary rounded">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-success">Success<i class="fas fa-check-double pl-3"></i></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+<!-- Body stores the respective information that loads the text content into the respective IDs (refer to JS) -->
+            <!-- Modal body -->
+            <div class="modal-body">
+              Thank you for registering an account with Orion Computers. Please read our <a href="tos.html">TOS &
+                RP!</a> <br><br>
+
+              Username: <span id="regname-modal"></span>
+              <br><br>
+              Password: <span id="regpass-modal"></span>
+              <br><br>
+              Email: <span id="regemail-modal"></span>
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal" onclick="location.href='index.html'">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container d-none d-lg-block col-lg-4 pt-5 pb-5 mt-5">
+        <img src="img/orion-notext2.png" alt="Orion-Account" class="mx-auto d-block">
+      </div>
+
+      <div class="container w-100 align-items-center p-5 col-sm-12 col-md-6 col-lg-4">
+        <div class="d-flex justify-content-center h-100">
+          <div class="card w-100 border rounded ml-auto">
+            <div class="card-header card-account">
+              <h3 class="htext">Register</h3>
+            </div>
+            <div class="card-body card-account">
+              <form id="register">
+
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <input type="email" class="form-control" id="emailreg" name="emailreg" placeholder="Email">
+                  <div class="invalid-feedback">Invalid Email!</div>
+                </div>
+
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="regname" name="regname" placeholder="Username">
+                  <div class="invalid-feedback">Invalid Username!</div>
+                </div>
+
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                  </div>
+                  <input type="password" class="form-control" id="regpass" name="regpass"
+                    placeholder="Desired Password">
+                  <div class="invalid-feedback">Must be more than or equal to 5 characters!</div>
+                </div>
+
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="regpass-cfm" name="regpass-cfm"
+                    placeholder="Confirm Password">
+                  <div class="invalid-feedback">Passwords do not match!</div>
+                </div>
+
+                <div class="row align-items-center pl-3 remember">
+
+                </div>
+
+                <div class="form-group d-none d-md-block pt-2">
+                  <input type="submit" value="Register" class="btn float-right login_btn ">
+                </div>
+                <div class="form-group d-block d-md-none pt-2">
+                  <input type="submit" value="Register" class="btn mx-auto d-block login_btn ">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer"></footer>
+</body>
+
+</html>
