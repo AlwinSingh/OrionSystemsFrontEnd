@@ -1,0 +1,98 @@
+@import "mobile.css"; /*can set max-width*/
+@import "tablet.css" screen and (min-width: 768px);
+@import "laptop.css" screen and (min-width: 992px);
+@import "lightbox.css";
+
+/* Custom Font Family (Exo2) */
+@font-face {
+    font-family: 'exo_2medium_italic';
+    src: url('exo2-mediumitalic-webfont.woff2') format('woff2'),
+        url('exo2-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exo_2semi_bold';
+    src: url('exo2-semibold-webfont.woff2') format('woff2'),
+        url('exo2-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exo_2extra_bold';
+    src: url('exo2-extrabold-webfont.woff2') format('woff2'),
+        url('exo2-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Universal CSS Code used throughout the pages */
+body {
+    background-color: black;
+    /*If background image does not load, it falls back on the bg color of 'black'*/
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.nav {
+    background-color: transparent !important;
+}
+
+.nav-link {
+	font-family: exo_2medium_italic, arial;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.nav-link:hover {
+	color: #7717C9 !important;
+}
+
+.dropdown-item {
+    font-family: exo_2medium_italic, arial; /*Custom does not load, arial will load as backup*/
+    color: white;
+    background-color: #490e7c;
+}
+
+.dropdown-menu {
+    background-color: #490e7c;
+}
+
+/* Universal CSS Text Section */
+.htext { /* Header Text */
+    font-family: exo_2medium_italic, arial;
+    /*Custom does not load, arial will load as backup*/
+    font-weight: 600;
+    font-size: 33px;
+    background: -webkit-linear-gradient(#490e7c, #7717c9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #C3C3C3;
+}
+
+.ehtext { /* Secondary Header Text */
+	font-family: exo_2medium_italic, arial; /*Custom does not load, arial will load as backup*/
+	font-size: 25px;
+	letter-spacing: 1px;
+	color: #7717C9;
+    font-weight: 600;
+}
+
+.text { /* Generic Text */
+    font-family: exo_2semi_bold, arial;
+    font-size: 17px;
+    line-height: 26px;
+    color: #c3c3c3;
+}
+
+.footerbg {
+    background-color: #161616;
+    border-top: 1px solid #c3c3c3;
+}

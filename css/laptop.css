@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document 
+Name: Alwin Singh
+Student ID: 1935996
+Class: DIT/FT/1A/01*/
+
+@media screen and (min-width: 1024px) {
+    .desktop-space {margin-left:10px;}
+    }

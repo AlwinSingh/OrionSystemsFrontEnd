@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document 
+Name: Alwin Singh
+Student ID: 1935996
+Class: DIT/fT/1A/01*/
+
+/* Index Page, Youtube (TV Backing) */
+.ledtv {
+	z-index: -1;
+}
+
+/* Account Page Login & Register Styling */
+.login_btn {
+	color: black;
+	background-color: #7717C9;
+	font-weight: 600;
+	font-family: "exo_2medium_italic";
+	width: 100px;
+}
+
+.login_btn:hover {
+	color: black;
+	background-color: #C3C3C3;
+}
+
+.card-account {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.input-group-prepend span {
+	background-color: #C3C3C3;
+	color: black;
+}
+
+input:focus {
+	outline: 0 0 0 0 !important;
+	box-shadow: 0 0 0 0 !important;
+
+}
+
+/* Sweet Alert Modal Box Custom CSS [Overwrite] */
+.swal-text {
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid darkred;
+}
+
+.swal-footer>.swal-button-container>.swal-button {
+	background-color: black;
+	color: #c3c3c3;
+}
+
+.swal-footer>.swal-button-container>.swal-button:hover {
+	background-color: #c3c3c3;
+	color: black;
+}
+
+/* Contact Form & Other Form Styling */
+
+.btn {
+	background-color: #7717C9
+}
+
+#salutation,
+#name,
+#email,
+#message {
+	background-color: black;
+}
+
+#salutation:focus {
+	color: #c3c3c3;
+}
+
+#salutation>option:hover {
+	color: #7717C9;
+}
+
+.modal-content {
+	background-color: #1a1a1a;
+	color: white;
+}
+
+.card {
+	background-color: transparent;
+}
+
+.card-header {
+	background-color: gray;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c3c3c3' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c3c3c3' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Events Page Info Box */
+.infobox {
+	width: auto;
+	height: auto;
+	border: solid 3px #3B3B3B;
+	border-radius: 10px;
+}
+
+/* --------------- */
+
+
+/* Style & Overwrite the default Background Color for the Table(s) */
+.table {
+	background-color: transparent;
+}
+
+/* Mission & History Page */
+/*History Header Text*/
+.historyheader {
+	font-family: exo_2medium_italic, arial;
+	/*Custom does not load, arial will load as backup*/
+	font-size: 38px;
+	letter-spacing: 2px;
+	color: #7717C9;
+	font-weight: 600;
+}
+
+/*Line Breaker for the History Page*/
+.historyline {
+	width: 250px;
+	height: 2px;
+	background-color: #C3C3C3;
+	/*for browsers that do not support gradient*/
+	background-image: linear-gradient(#7717C9, #FFFFFF);
+}
+
+.historyheader {
+	font-family: exo_2medium_italic, arial;
+	/*Custom does not load, arial will load as backup*/
+	font-size: 38px;
+	letter-spacing: 2px;
+	color: #7717C9;
+	font-weight: 600;
+}
+
+.missionheader {
+	font-family: exo_2medium_italic, arial;
+	/*Custom does not load, arial will load as backup*/
+	font-size: 38px;
+	letter-spacing: 2px;
+	color: #7717C9;
+	font-weight: 600;
+}
+
+/*Mission Text Paragraph*/
+.missiontext {
+	font-family: exo_2semi_bold, arial;
+	/*Custom does not load, arial will load as backup*/
+	font-size: 17px;
+	line-height: 26px;
+	color: #c6c6c6;
+	width: 680px;
+}
+
+/*Alwin's signature used in Mission Page*/
+.signature {
+	font-size: 40px;
+	font-family: Brush Script MT;
+	color: #7717C9;
+}
+
+/*Text underneath the signature*/
+.signaturetext {
+	font-size: 8px;
+	font-family: arial;
+	color: #C6C6C6;
+}
+
+/* ------------- */
+
+
+
+/* SHOPPING CART (CART.HTML) CSS */
+.shopping-cart{
+	font-family: exo_2medium_italic, arial;
+}
+
+.shopping-cart .content{
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.shopping-cart .dark .block-heading p{
+	opacity:0.8;
+}
+
+.shopping-cart .block-heading h1,
+.shopping-cart .block-heading h2,
+.shopping-cart .block-heading h3 {
+	color: #7717c9;
+}
+
+.shopping-cart .items .product .info .product-name{
+	font-weight: 600;
+}
+
+.shopping-cart .items .product .info .product-name .product-info{
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.shopping-cart .items .product .info .product-name .product-info .value{
+	font-weight: 400;
+}
+
+.shopping-cart .items .product .info .quantity .quantity-input{
+    width: 80px;
+}
+
+.summary{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shopping-cart .summary .summary-item:not(:last-of-type){
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+	.shopping-cart .items .product .info {
+		padding-top: 25px;
+		text-align: left; 
+	}
+
+	.shopping-cart .items .product .info .quantity .quantity-input {
+		padding: 4px 10px;
+		text-align: center; 
+	}
+}
+
+
+/* CHECKOUTPAGE (CHECKOUT.HTML) */
+.payment-form .block-heading h1,
+.payment-form .block-heading h2,
+.payment-form .block-heading h3 {
+	color: #7717c9;
+}
+
+.payment-form form {
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.payment-form .products {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.checkout-form {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.payment-form .card-details {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.border-checkout {
+	border: 2px solid #7717c9 !important;
+	border-radius: 10px;
+}
+
+.btn-checkout {
+	font-family: exo_2medium_italic, arial;
+	/*Custom does not load, arial will load as backup*/
+	font-weight: 600;
+	background-color: #000000;
+	color: #7717C9;
+	border: solid 1px grey;
+	border-radius: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
